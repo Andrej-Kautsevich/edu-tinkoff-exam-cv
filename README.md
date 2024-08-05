@@ -1,1 +1,0 @@
-# edu-tinkoff-exam-cv
