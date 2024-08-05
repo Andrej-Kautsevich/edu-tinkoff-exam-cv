@@ -1,6 +1,6 @@
 # edu-tinkoff-exam-cv
 
-> Live demo [_here_](https://volcano-watch.netlify.app/).
+> Live demo [_here_](https://andrej-kautsevich.github.io/edu-tinkoff-exam-cv/).
 
 This is a educational project for T-Bank educational platform exam.
 
