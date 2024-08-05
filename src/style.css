@@ -43,7 +43,13 @@ h6 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  max-width: 1440px;
   padding: 20px 15px;
+
+  @media (max-width: 900px) {
+    gap: 10px;
+    padding: 10px;
+  }
 }
 
 .section {
@@ -97,6 +103,10 @@ h6 {
 
 .experience {
   grid-column: 1 / span 3;
+
+  @media (max-width: 940px) {
+    grid-column: 1 / span 4;
+  }
 }
 
 .job-list {
@@ -156,6 +166,11 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    /* @media (max-width: 940px) {
+      flex-direction: row;
+      width: 100%;
+    } */
   }
 
   .tools__card {
@@ -167,6 +182,10 @@ h6 {
     padding: 16px 4px;
     background-color: var(--main-bg-color);
     border-radius: 6px;
+
+    @media (max-width: 940px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     img {
       display: flex;
@@ -183,6 +202,10 @@ h6 {
     background-color: #000;
     border-radius: 50px;
   }
+
+  @media (max-width: 940px) {
+    grid-column: 1 / span 4;
+  }
 }
 
 .education {
@@ -195,6 +218,10 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  @media (max-width: 700px) {
+    grid-column: 1 / span 4;
   }
 }
 
@@ -234,6 +261,11 @@ h6 {
   flex-direction: column;
   grid-column: 3 / span 2;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    grid-column: 1 / span 4;
+    gap: 10px;
+  }
 }
 
 .interests {
