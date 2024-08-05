@@ -10,6 +10,7 @@
   --main-bg-color: #fff;
   --section-bg-color: #f0f0f0;
   --color-secondary: #28d979;
+  --color-secondary-dark: #1fac5e;
   --color-contrast: #fff;
 }
 
@@ -38,6 +39,7 @@ h6 {
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -303,7 +305,7 @@ h6 {
     width: 0;
     height: 40px;
     background: #fff;
-    box-shadow: -200px 0 0 200px var(--color-secondary);
+    box-shadow: -400px 0 0 400px var(--color-secondary);
     appearance: none;
   }
 }
@@ -349,4 +351,21 @@ h6 {
   background-color: rgba(255 255 255 / 50%);
   outline: none;
   transform: scale(1.05);
+}
+
+#save-2-pdf-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem 2rem;
+  color: var(--color-contrast);
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#save-2-pdf-btn:hover {
+  background-color: var(--color-secondary-dark);
 }
