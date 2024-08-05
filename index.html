@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="container" id="cv-element">
+      <div class="section section_no-padding profile">
+        <img src="/profileImg.png" alt="Profile Image" class="profile__image" />
+      </div>
+      <div class="section name">
+        <p contenteditable id="hello-text">Hello 👋🏻 I’m</p>
+        <div class="name__info">
+          <h2 contenteditable id="name-text">Karthik SR</h2>
+          <p contenteditable id="title-text">UX/UI Designer</p>
+        </div>
+      </div>
+      <div class="section languages">
+        <h2 class="section__title">Languages</h2>
+        <ul class="languages__list">
+          <li class="languages__item progress">
+            <label contenteditable for="English" id="languages-1">English</label>
+            <input type="range" id="English" name="English" min="0" max="100" step="10" />
+          </li>
+          <li class="languages__item progress">
+            <label contenteditable for="Malayalam" id="languages-2">Malayalam</label>
+            <input type="range" id="Malayalam" name="Malayalam" min="0" max="100" step="10" />
+          </li>
+          <li class="languages__item progress">
+            <label contenteditable for="Hindi" id="languages-3">Hindi</label>
+            <input type="range" id="Hindi" name="Hindi" min="0" max="100" step="10" />
+          </li>
+        </ul>
+      </div>
+      <div class="section experience">
+        <h2 class="section__title">Experience</h2>
+        <ul class="job-list">
+          <li class="card card_recent job">
+            <div class="job__tag">most recent</div>
+            <p class="job__header" contenteditable id="job-time-1">Jun. 2023 - Present</p>
+            <div class="job__content">
+              <div class="job__info">
+                <h3 contenteditable id="job-title-1">Marketing Manager</h3>
+                <p contenteditable id="job-company-1">Pankaayam | Full-time</p>
+              </div>
+              <ul class="job__features">
+                <li>
+                  <p contenteditable id="job-1-text-1">
+                    Strategy development and planning of campaigns that promote the business and generate genuine
+                    traffic
+                  </p>
+                </li>
+                <li>
+                  <p contenteditable id="job-1-text-2">SEO Content Creation for Blogs, Website, Social media</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="card job">
+            <p class="job__header" contenteditable id="job-time-2">2017 - Present</p>
+            <div class="job__content">
+              <div class="job__info">
+                <h3 contenteditable id="job-title-2">Graphic / Web designer</h3>
+                <p contenteditable id="job-company-2">Freelance</p>
+              </div>
+              <ul class="job__features">
+                <li>
+                  <p contenteditable id="job-2-text-1">
+                    Development of internal projects from scratch, product design of brands
+                  </p>
+                </li>
+                <li>
+                  <p contenteditable id="job-2-text-2">Landing page, webapps and hybrid apps</p>
+                </li>
+                <li>
+                  <p contenteditable id="job-2-text-3">
+                    Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues
+                    as necessary.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="card job">
+            <p class="job__header" contenteditable id="job-time-3">Sep. 2021 - Jun. 2023</p>
+            <div class="job__content">
+              <div class="job__info">
+                <h3 contenteditable id="job-title-3">Legal Assistant</h3>
+                <p contenteditable id="job-company-3">Law Firm | Intern</p>
+              </div>
+              <ul class="job__features">
+                <li contenteditable id="job-3-text-1">
+                  Provide administrative support to lawyer and enhance office effectiveness
+                </li>
+                <li contenteditable id="job-3-text-2">Handle communication with clients, witnesses etc</li>
+                <li contenteditable id="job-3-text-3">
+                  Prepare case briefs and summarize depositions, interrogatories and testimony
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section tools">
+        <h2 class="section__title">Tools</h2>
+        <ui class="tools__list">
+          <li class="tools__card">
+            <div class="tools__tag">design</div>
+            <img src="/tools-icons/logoFigma.svg" alt="logo Figma" />
+            <img src="/tools-icons/logoPhotoshop.svg" alt="logo Adobe Photoshop" />
+            <img src="/tools-icons/logoIllustrator.svg" alt="logo Adobe illustrator" />
+            <img src="/tools-icons/logoPremiere.svg" alt="logo Adobe premiere" />
+            <img src="/tools-icons/logoNotion.svg" alt="logo Notion" />
+            <img src="/tools-icons/logoMeet.svg" alt="logo Meet" />
+          </li>
+          <li class="tools__card">
+            <div class="tools__tag">no-code</div>
+            <img src="/tools-icons/logoZapìer 1.svg" alt="logo Zapier" />
+            <img src="/tools-icons/logoWebflow.svg" alt="logo WebFlow" />
+            <img src="/tools-icons/logoFramer.svg" alt="logo Framer" />
+            <img src="/tools-icons/logoWordpress.svg" alt="logo WordPress" />
+          </li>
+          <li class="tools__card">
+            <div class="tools__tag">artificial intelligence</div>
+            <img src="/tools-icons/logoChatGPT 1.svg" alt="logo ChatGPT" />
+            <img src="/tools-icons/logoCopilot 1.svg" alt="logo Copilot" />
+            <img src="/tools-icons/logoMidjourney 1.svg" alt="logo Midjourney" />
+          </li>
+        </ui>
+      </div>
+      <!-- Page break for html2pdf -->
+      <div class="html2pdf__page-break"></div>
+      <div class="section education">
+        <h2 class="section__title">Education</h2>
+        <ul class="education__content">
+          <li class="education-card card card_recent">
+            <div class="education-card__tag"><img src="/tools-icons/heart.svg" alt="" /></div>
+            <h3 contenteditable id="education-time-1">2023</h3>
+            <div>
+              <p class="education-card__title" contenteditable id="education-title-1">UI/UX</p>
+              <p contenteditable class="education-card__tags education-card__tags_contrast" id="education-tags-1">
+                #UX #UI #research #DesignSystem #UI #wireframing #figma #UX
+              </p>
+            </div>
+            <p contenteditable id="education-school-1">Coursera</p>
+          </li>
+          <li class="education-card card">
+            <h3 contenteditable id="education-time-2">2017 - 2022</h3>
+            <div>
+              <p class="education-card__title" contenteditable id="education-title-2">Law</p>
+              <p contenteditable class="education-card__tags" id="education-tags-2">
+                #law #legalStudies #contracts #internationallaws
+              </p>
+            </div>
+            <p contenteditable id="education-school-2">University of Kerala</p>
+          </li>
+          <li class="education-card card">
+            <h3 contenteditable id="education-time-3">2017</h3>
+            <div>
+              <p class="education-card__title" contenteditable id="education-title-3">Graphic design</p>
+              <p contenteditable class="education-card__tags" id="education-tags-3">
+                #branding #web #illustration #adobe
+              </p>
+            </div>
+            <p contenteditable id="education-school-3">Coursera</p>
+          </li>
+        </ul>
+      </div>
+      <div class="extra">
+        <div class="section interests">
+          <h2 class="section__title">Interests</h2>
+          <ul>
+            <li contenteditable id="interests-1">branding</li>
+            <li contenteditable id="interests-2">design</li>
+            <li contenteditable id="interests-3">photography</li>
+            <li contenteditable id="interests-4">artificial intelligence</li>
+            <li contenteditable id="interests-5">illustration</li>
+            <li contenteditable id="interests-6">typography</li>
+            <li contenteditable id="interests-7">social networks</li>
+            <li contenteditable id="interests-8">research</li>
+            <li contenteditable id="interests-9">dron pilot</li>
+            <li contenteditable id="interests-10">games</li>
+          </ul>
+        </div>
+        <div class="section contacts">
+          <p contenteditable class="contacts__title" id="contacts-text-1">
+            Let´s chat! I´m ready to work on exciting projects
+          </p>
+          <p class="contacts__text">
+            <a contenteditable href="mailto:srkarthik.designscape@gmail.com" id="contacts-text-2"
+              >srkarthik.designscape@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <button type="button" id="save-2-pdf-btn">Save as PDF</button>
+    </div>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/ripple.js"></script>
+  </body>
+</html>
